@@ -29,13 +29,7 @@ namespace testgit
             Console.WriteLine($"]");
             Console.WriteLine();
         }
-        static bool IsEven(int num)
-        {
-            return num % 2 == 0;
-        }
-        static bool IsOdd(int num)
-        {
-            return num % 2 != 0;
-        }
+        static bool IsEven(int num)=> num % 2 == 0;
+        static bool IsOdd(int num)=>!IsEven(num);
     }
 }
